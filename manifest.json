@@ -1,0 +1,10 @@
+{
+    "name": "Atman NextGen LLP",
+    "short_name": "Atman",
+    "description": "Enterprise Software & Digital Transformation",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#0070F3",
+    "icons": []
+}

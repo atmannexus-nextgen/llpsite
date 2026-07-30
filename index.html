@@ -1,122 +1,387 @@
-
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Atman NextGen LLP</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#07111f;--card:#fff;--primary:#2563eb;--text:#0f172a;--muted:#64748b}
-*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif}
-html{scroll-behavior:smooth}
-body{background:#f8fafc;color:var(--text)}
-header{position:fixed;top:0;width:100%;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.9);backdrop-filter:blur(12px);box-shadow:0 5px 20px rgba(0,0,0,.06)}
-.logo{font-size:28px;font-weight:800}.logo span{color:var(--primary)}
-nav a{text-decoration:none;color:#334155;margin-left:30px;font-weight:600}
-.btn{display:inline-block;background:var(--primary);color:#fff;padding:14px 28px;border-radius:999px;text-decoration:none;font-weight:700;box-shadow:0 12px 30px rgba(37,99,235,.25)}
-.hero{padding:170px 7% 100px;background:radial-gradient(circle at top right,#2563eb55,transparent 35%),linear-gradient(135deg,#07111f,#132a46);color:#fff;display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:center}
-.hero h1{font-size:58px;line-height:1.05;margin-bottom:20px}
-.hero p{font-size:20px;color:#cbd5e1;margin-bottom:35px}
-.illustration{background:#fff1;border:1px solid #ffffff22;border-radius:24px;padding:35px}
-.node{background:#fff;border-radius:12px;padding:14px;color:#111;margin:12px 0;text-align:center;font-weight:700}
-section{padding:90px 7%}
-.title{text-align:center;margin-bottom:50px}
-.title h2{font-size:40px}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.stat,.service,.tech{background:#fff;border-radius:20px;padding:30px;box-shadow:0 12px 35px rgba(0,0,0,.08)}
-.num{font-size:42px;font-weight:800;color:var(--primary)}
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
-.service:hover{transform:translateY(-8px);transition:.3s}
-.techgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:18px}
-.tech{text-align:center;font-weight:700}
-.cta{background:#0f172a;color:#fff;border-radius:30px;padding:60px;text-align:center}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:35px}
-form{display:grid;gap:15px}
-input,textarea,select{padding:15px;border-radius:12px;border:1px solid #dbe4ef}
-footer{background:#07111f;color:#fff;text-align:center;padding:30px;margin-top:60px}
-@media(max-width:900px){
-.hero,.contact{grid-template-columns:1fr}
-.stats{grid-template-columns:repeat(2,1fr)}
-.hero h1{font-size:42px}
-header nav{display:none}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atman NextGen LLP - Enterprise Software & Digital Transformation</title>
+    <meta name="description" content="Atman NextGen LLP delivers enterprise-grade software development, AI solutions, cloud infrastructure, and digital transformation services for global businesses.">
+    
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Atman NextGen LLP - Enterprise Software Solutions">
+    <meta property="og:description" content="Delivering enterprise-grade software development, AI solutions, and digital transformation.">
+    <meta property="og:image" content="/assets/images/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <link rel="canonical" href="https://atmannextgen.com/">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Atman NextGen LLP",
+      "url": "https://atmannextgen.com",
+      "logo": "https://atmannextgen.com/assets/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "atmannexus@gmail.com",
+        "contactType": "customer service"
+      }
+    }
+    </script>
 </head>
 <body>
-<header>
-<div class="logo">Atman <span>NextGen</span></div>
-<nav>
-<a href="#">Home</a><a href="#">Services</a><a href="#">Portfolio</a><a href="#">About</a><a href="#" class="btn">Get Proposal</a>
-</nav>
-</header>
 
-<section class="hero">
-<div>
-<h1>Building Enterprise Software That Accelerates Business Growth</h1>
-<p>Enterprise .NET Solutions • Mobile Apps • AI Integration • Cloud Engineering • Digital Transformation</p>
-<a class="btn" href="#contact">Schedule Free Consultation</a>
-</div>
-<div class="illustration">
-<div class="node">☁ Azure & AWS Cloud</div>
-<div class="node">⚙ Enterprise APIs (.NET)</div>
-<div class="node">📱 Flutter • React Native</div>
-<div class="node">💻 React • Angular</div>
-<div class="node">🗄 SQL Server • PostgreSQL</div>
-</div>
-</section>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
 
-<section>
-<div class="title"><h2>Trusted Technology Partner</h2></div>
-<div class="stats">
-<div class="stat"><div class="num">50+</div><p>Projects Delivered</p></div>
-<div class="stat"><div class="num">20+</div><p>Technologies</p></div>
-<div class="stat"><div class="num">99%</div><p>Client Satisfaction</p></div>
-<div class="stat"><div class="num">24×7</div><p>Support</p></div>
-</div>
-</section>
+    <!-- SVG Definitions (Reusable Icons) -->
+    <svg style="display: none;">
+        <defs>
+            <linearGradient id="brand-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="var(--color-primary)" />
+                <stop offset="100%" stop-color="var(--color-secondary)" />
+            </linearGradient>
+            
+            <g id="icon-cloud">
+                <path d="M17.5 19C19.9853 19 22 16.9853 22 14.5C22 12.0147 19.9853 10 17.5 10C17.1593 10 16.8277 10.0378 16.5108 10.109C15.8016 7.21443 13.1557 5 10 5C6.13401 5 3 8.13401 3 12C3 12.4357 3.03975 12.8621 3.11586 13.2759C1.90698 14.1539 1.13401 15.5907 1.13401 17.2024C1.13401 19.8533 3.28307 22.0024 5.93401 22.0024H17.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </g>
+        </defs>
+    </svg>
 
-<section style="background:#f8fafc">
-<div class="title"><h2>Our Services</h2></div>
-<div class="services">
-<div class="service"><h3>Enterprise Software</h3><p>ERP, CRM, Automation Platforms.</p></div>
-<div class="service"><h3>Mobile Applications</h3><p>Flutter, Android, iOS.</p></div>
-<div class="service"><h3>Cloud & DevOps</h3><p>AWS, Azure, CI/CD, Docker.</p></div>
-<div class="service"><h3>AI Solutions</h3><p>OpenAI integrations & automation.</p></div>
-<div class="service"><h3>UI/UX Design</h3><p>Modern user experiences.</p></div>
-<div class="service"><h3>API Development</h3><p>High-performance REST APIs.</p></div>
-</div>
-</section>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linejoin="round" fill="none"/></svg>
+                Atman NextGen
+            </a>
+            
+            <nav class="nav-links">
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="industries.html" class="nav-link">Industries</a>
+                <a href="technologies.html" class="nav-link">Technologies</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="blog/index.html" class="nav-link">Insights</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24" height="24"></svg>
+                </button>
+                <a href="contact.html" class="btn btn-primary btn-sm nav-links">Get in Touch</a>
+                <button class="mobile-menu-btn" aria-label="Open Menu">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+    </header>
 
-<section>
-<div class="title"><h2>Technology Stack</h2></div>
-<div class="techgrid">
-<div class="tech">.NET 9/10</div><div class="tech">Azure</div><div class="tech">AWS</div><div class="tech">React</div><div class="tech">Angular</div><div class="tech">Flutter</div><div class="tech">Docker</div><div class="tech">SQL Server</div>
-</div>
-</section>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <nav class="mobile-nav-links">
+            <a href="about.html" class="mobile-nav-link">About</a>
+            <a href="services.html" class="mobile-nav-link">Services</a>
+            <a href="industries.html" class="mobile-nav-link">Industries</a>
+            <a href="technologies.html" class="mobile-nav-link">Technologies</a>
+            <a href="portfolio.html" class="mobile-nav-link">Portfolio</a>
+            <a href="blog/index.html" class="mobile-nav-link">Insights</a>
+            <a href="contact.html" class="mobile-nav-link">Get in Touch</a>
+        </nav>
+    </div>
 
-<section id="contact">
-<div class="cta">
-<h2>Ready to Build Something Amazing?</h2>
-<p style="margin:20px 0;color:#cbd5e1">Let's discuss your next digital product.</p>
-</div>
-<div class="contact">
-<div>
-<h3>Contact</h3><br>
-<p>📧 contact@atmannextgen.com</p>
-<p>📞 +91-XXXXXXXXXX</p>
-<p>📍 India</p>
-</div>
-<form>
-<input placeholder="Full Name">
-<input placeholder="Business Email">
-<select><option>Select Service</option></select>
-<textarea rows="5" placeholder="Tell us about your project"></textarea>
-<button class="btn">Send Inquiry</button>
-</form>
-</div>
-</section>
+    <!-- Hero Section -->
+    <section class="section animate-fade-in" style="min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden;">
+        <!-- Background Effects -->
+        <div style="position: absolute; top: -10%; left: -10%; width: 50vw; height: 50vw; background: radial-gradient(circle, var(--color-primary) 0%, rgba(0,0,0,0) 60%); opacity: 0.1; filter: blur(60px); z-index: -1;"></div>
+        <div style="position: absolute; bottom: -10%; right: -10%; width: 50vw; height: 50vw; background: radial-gradient(circle, var(--color-secondary) 0%, rgba(0,0,0,0) 60%); opacity: 0.1; filter: blur(60px); z-index: -1;"></div>
+        
+        <div class="container">
+            <div class="text-center" style="max-width: 900px; margin: 0 auto;">
+                <span class="badge badge-primary animate-fade-up" style="margin-bottom: var(--spacing-6);">Enterprise Technology Partner</span>
+                <h1 class="animate-fade-up delay-100" style="margin-bottom: var(--spacing-6);">
+                    Architecting the <span class="text-gradient">Next Generation</span> of Digital Ecosystems
+                </h1>
+                <p class="animate-fade-up delay-200" style="font-size: var(--text-xl); margin-bottom: var(--spacing-8);">
+                    We build resilient, scalable, and intelligent software solutions for enterprises that demand excellence. From advanced cloud architectures to transformative AI capabilities.
+                </p>
+                <div class="flex justify-center gap-4 animate-fade-up delay-300">
+                    <a href="services.html" class="btn btn-glow btn-lg">Explore Solutions</a>
+                    <a href="contact.html" class="btn btn-secondary btn-lg">Consult an Expert</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<footer>© 2026 Atman NextGen LLP • Enterprise Software & Cloud Solutions</footer>
+    <!-- Stats Section -->
+    <section class="section section-bg-alt">
+        <div class="container">
+            <div class="grid grid-cols-2" style="gap: var(--spacing-4);">
+                <!-- Stat 1 -->
+                <div class="stat-card card-glass reveal">
+                    <div class="stat-value text-gradient-accent"><span class="counter-value" data-target="250" data-suffix="+">0</span></div>
+                    <div class="stat-label">Enterprise Projects</div>
+                </div>
+                <!-- Stat 2 -->
+                <div class="stat-card card-glass reveal delay-100">
+                    <div class="stat-value text-gradient"><span class="counter-value" data-target="50" data-suffix="+">0</span></div>
+                    <div class="stat-label">Tech Experts</div>
+                </div>
+                <!-- Stat 3 -->
+                <div class="stat-card card-glass reveal delay-200" style="grid-column: span 2;">
+                    <div class="stat-value text-gradient"><span class="counter-value" data-target="99" data-suffix="%">0</span></div>
+                    <div class="stat-label">Client Retention</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-cols-1" style="gap: var(--spacing-8); align-items: center;">
+                <div class="reveal-left">
+                    <span class="badge badge-primary">About Us</span>
+                    <h2>Engineering the Future of Business</h2>
+                    <p>Atman NextGen LLP is a premier technology consulting and software engineering firm. We specialize in transforming complex business challenges into elegant, scalable digital solutions. With a focus on modern architectures, cloud-native development, and artificial intelligence, we empower enterprises to stay ahead in a rapidly evolving digital landscape.</p>
+                    <ul style="margin-bottom: var(--spacing-6); padding-left: var(--spacing-4);">
+                        <li style="margin-bottom: var(--spacing-2); display: flex; gap: var(--spacing-2);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Elite Engineering Talent</li>
+                        <li style="margin-bottom: var(--spacing-2); display: flex; gap: var(--spacing-2);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Enterprise-Grade Security</li>
+                        <li style="display: flex; gap: var(--spacing-2);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Agile Delivery Methodology</li>
+                    </ul>
+                    <a href="about.html" class="btn btn-secondary">Discover Our Story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section section-bg-alt">
+        <div class="container">
+            <div class="text-center reveal" style="margin-bottom: var(--spacing-12);">
+                <span class="badge badge-primary">Our Expertise</span>
+                <h2>Comprehensive Enterprise Solutions</h2>
+                <p style="max-width: 600px; margin: 0 auto;">End-to-end technology services designed to accelerate your digital transformation.</p>
+            </div>
+            
+            <div class="grid grid-cols-1" style="gap: var(--spacing-6);">
+                <!-- Service 1 -->
+                <a href="services.html#software" class="card service-card reveal-scale">
+                    <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg></div>
+                    <div class="service-title">Custom Software Engineering</div>
+                    <div class="service-desc">Bespoke, scalable applications built on microservices architectures for high-performance enterprise needs.</div>
+                </a>
+                <!-- Service 2 -->
+                <a href="services.html#cloud" class="card service-card reveal-scale delay-100">
+                    <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg></div>
+                    <div class="service-title">Cloud Infrastructure</div>
+                    <div class="service-desc">AWS, Azure, and Google Cloud migrations, DevOps automation, and serverless architectures.</div>
+                </a>
+                <!-- Service 3 -->
+                <a href="services.html#ai" class="card service-card reveal-scale delay-200">
+                    <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div>
+                    <div class="service-title">AI & Machine Learning</div>
+                    <div class="service-desc">Integrating predictive analytics, generative AI, and automation into your core business processes.</div>
+                </a>
+            </div>
+            
+            <div class="text-center reveal" style="margin-top: var(--spacing-8);">
+                <a href="services.html" class="btn btn-outline">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center reveal" style="margin-bottom: var(--spacing-12);">
+                <span class="badge badge-primary">Tech Stack</span>
+                <h2>Powered by Modern Technologies</h2>
+            </div>
+            <div class="grid grid-cols-2" style="gap: var(--spacing-4); text-align: center;">
+                <div class="card reveal-scale"><h3>.NET Core</h3></div>
+                <div class="card reveal-scale delay-100"><h3>React & Next.js</h3></div>
+                <div class="card reveal-scale delay-200"><h3>Node.js</h3></div>
+                <div class="card reveal-scale delay-300"><h3>Python</h3></div>
+            </div>
+            <div class="text-center reveal" style="margin-top: var(--spacing-8);">
+                <a href="technologies.html" class="btn btn-secondary">Explore Full Stack</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="section section-bg-alt">
+        <div class="container">
+            <div class="text-center reveal" style="margin-bottom: var(--spacing-12);">
+                <span class="badge badge-primary">Industries We Serve</span>
+                <h2>Transforming Multiple Sectors</h2>
+            </div>
+            <div class="grid grid-cols-2" style="gap: var(--spacing-4);">
+                <a href="industries.html#finance" class="card card-glass reveal-scale text-center">
+                    <h3 style="margin-bottom: 0;">Finance</h3>
+                </a>
+                <a href="industries.html#healthcare" class="card card-glass reveal-scale delay-100 text-center">
+                    <h3 style="margin-bottom: 0;">Healthcare</h3>
+                </a>
+                <a href="industries.html#retail" class="card card-glass reveal-scale delay-200 text-center">
+                    <h3 style="margin-bottom: 0;">Retail</h3>
+                </a>
+                <a href="industries.html#education" class="card card-glass reveal-scale delay-300 text-center">
+                    <h3 style="margin-bottom: 0;">Education</h3>
+                </a>
+            </div>
+            <div class="text-center reveal" style="margin-top: var(--spacing-8);">
+                <a href="industries.html" class="btn btn-outline">All Industries</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process (Timeline) -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center reveal" style="margin-bottom: var(--spacing-12);">
+                <span class="badge badge-primary">Our Process</span>
+                <h2>How We Deliver Excellence</h2>
+            </div>
+            <div style="position: relative; max-width: 800px; margin: 0 auto;">
+                <div style="position: absolute; left: 24px; top: 0; bottom: 0; width: 2px; background: var(--color-border);"></div>
+                
+                <div class="reveal-left" style="position: relative; padding-left: var(--spacing-12); margin-bottom: var(--spacing-8);">
+                    <div style="position: absolute; left: 16px; top: 0; width: 18px; height: 18px; border-radius: 50%; background: var(--color-primary); border: 4px solid var(--color-bg-default);"></div>
+                    <h3 style="margin-bottom: var(--spacing-2);">1. Discovery & Strategy</h3>
+                    <p>We analyze your business requirements and define a scalable architecture.</p>
+                </div>
+                
+                <div class="reveal-left delay-100" style="position: relative; padding-left: var(--spacing-12); margin-bottom: var(--spacing-8);">
+                    <div style="position: absolute; left: 16px; top: 0; width: 18px; height: 18px; border-radius: 50%; background: var(--color-primary); border: 4px solid var(--color-bg-default);"></div>
+                    <h3 style="margin-bottom: var(--spacing-2);">2. Agile Engineering</h3>
+                    <p>Iterative development using modern frameworks and robust security practices.</p>
+                </div>
+                
+                <div class="reveal-left delay-200" style="position: relative; padding-left: var(--spacing-12); margin-bottom: var(--spacing-8);">
+                    <div style="position: absolute; left: 16px; top: 0; width: 18px; height: 18px; border-radius: 50%; background: var(--color-primary); border: 4px solid var(--color-bg-default);"></div>
+                    <h3 style="margin-bottom: var(--spacing-2);">3. Quality Assurance</h3>
+                    <p>Rigorous automated and manual testing to ensure enterprise-grade stability.</p>
+                </div>
+                
+                <div class="reveal-left delay-300" style="position: relative; padding-left: var(--spacing-12);">
+                    <div style="position: absolute; left: 16px; top: 0; width: 18px; height: 18px; border-radius: 50%; background: var(--color-primary); border: 4px solid var(--color-bg-default);"></div>
+                    <h3 style="margin-bottom: var(--spacing-2);">4. Deployment & Scale</h3>
+                    <p>Continuous integration and scalable cloud deployment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-bg-alt">
+        <div class="container container-sm">
+            <div class="text-center reveal" style="margin-bottom: var(--spacing-12);">
+                <span class="badge badge-primary">FAQ</span>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="accordion reveal">
+                <button class="accordion-header">
+                    What is your typical project timeline?
+                    <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="accordion-body">
+                    <p>Project timelines vary depending on complexity and scope. A standard enterprise MVP can take 3-4 months, while full-scale digital transformations may span 6-12 months. We use Agile methodologies to deliver value incrementally.</p>
+                </div>
+            </div>
+            
+            <div class="accordion reveal delay-100">
+                <button class="accordion-header">
+                    Do you provide post-launch support?
+                    <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="accordion-body">
+                    <p>Yes, we offer comprehensive maintenance, DevOps support, and SLA-backed SLAs to ensure your systems run smoothly and scale securely after launch.</p>
+                </div>
+            </div>
+            
+            <div class="accordion reveal delay-200">
+                <button class="accordion-header">
+                    What technologies do you specialize in?
+                    <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="accordion-body">
+                    <p>We are experts in .NET Core, React, Node.js, Python, and modern cloud platforms (AWS, Azure, Google Cloud). We also have a dedicated AI/ML practice.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="position: relative; overflow: hidden;">
+        <!-- Glowing background -->
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100vw; height: 100vw; background: radial-gradient(circle, var(--color-primary) 0%, rgba(0,0,0,0) 40%); opacity: 0.15; filter: blur(40px); z-index: -1;"></div>
+        
+        <div class="container text-center reveal-scale">
+            <h2 style="font-size: var(--text-5xl); margin-bottom: var(--spacing-6);">Ready to Transform Your Business?</h2>
+            <p style="font-size: var(--text-lg); max-width: 600px; margin: 0 auto var(--spacing-8) auto;">Partner with Atman NextGen LLP to build scalable, secure, and intelligent software solutions.</p>
+            <div class="flex justify-center gap-4">
+                <a href="contact.html" class="btn btn-glow btn-lg">Start Your Project</a>
+                <a href="portfolio.html" class="btn btn-secondary btn-lg">View Our Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="navbar-brand">Atman NextGen</a>
+                    <p class="footer-desc">Enterprise software engineering and digital transformation solutions for global businesses.</p>
+                    <a href="mailto:atmannexus@gmail.com" class="text-gradient">atmannexus@gmail.com</a>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Services</h4>
+                    <nav class="footer-links">
+                        <a href="services.html" class="footer-link">Custom Software</a>
+                        <a href="services.html" class="footer-link">Cloud Solutions</a>
+                        <a href="services.html" class="footer-link">AI & ML</a>
+                        <a href="services.html" class="footer-link">DevOps</a>
+                    </nav>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <nav class="footer-links">
+                        <a href="about.html" class="footer-link">About Us</a>
+                        <a href="blog/index.html" class="footer-link">Blog</a>
+                        <a href="contact.html" class="footer-link">Contact</a>
+                    </nav>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Legal</h4>
+                    <nav class="footer-links">
+                        <a href="privacy/index.html" class="footer-link">Privacy Policy</a>
+                        <a href="terms/index.html" class="footer-link">Terms of Service</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Atman NextGen LLP. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+
